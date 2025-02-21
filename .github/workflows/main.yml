@@ -20,5 +20,5 @@ jobs:
           cache: maven  # Optionally cache Maven packages
 
       - name: Build with Maven
-        working-directory: ./javamavenapp/javaparser-maven-sample-master
+        working-directory: ./javaparser-maven-sample-master
         run: mvn -B clean install
