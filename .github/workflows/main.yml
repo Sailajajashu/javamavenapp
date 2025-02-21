@@ -20,4 +20,5 @@ jobs:
           cache: maven  # Optionally cache Maven packages
 
       - name: Build with Maven
-        run: mvn -B clean install --file javamavenapp/javaparser-maven-sample-master/pom.xml # Optionally add -DskipTests to skip tests
+        working-directory: ./javamavenapp/javaparser-maven-sample-master
+        run: mvn -B clean install
